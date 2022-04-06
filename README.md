@@ -12,4 +12,4 @@ Choose the zip with the right Imaris version. The Imaris 9.7.2 scripts will work
 To download the scripts, either download the full code containg all four releases in ZIP format from this screen or download the release you need from the 'Releases' tab on the right.
 
 Known bugs:
-- If the spots localization script does not contain spots with the ID 'Rib0' or 'PSD0', all calculated values will be deleted. To omit this, give the first PSD or ribbon pointID 0
+- If the spots localization script does not contain spots with the ID 'Rib0' or 'PSD0', all calculated values will be deleted. To omit this, give the first PSD or ribbon pointID the value '0'
