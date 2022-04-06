@@ -8,3 +8,5 @@ Updates in this version:
 
 This github contains four zip files. Choose the right zip according to whether you're analyzing spots or surfaces.
 Choose the zip with the right Imaris version. The Imaris 9.7.2 scripts will work as long as Imaris does not change the format of the Excel outputs.
+
+To download the scripts, either download the full code in ZIP format from this screen or download the release you need from the 'Releases' tab on the right.
