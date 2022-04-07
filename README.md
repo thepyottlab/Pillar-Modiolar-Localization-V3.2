@@ -13,3 +13,4 @@ To download the scripts, either download the full code containg all four release
 
 Known bugs:
 - If the spots localization script does not contain spots with the ID 'Rib0' or 'PSD0', all calculated values will be deleted. To omit this, give the first PSD or ribbon pointID the value '0'
+- When running the principal component analysis, the console will print "NAs introduced by coercion". This occurs because the automatic 3D figure generation requires a numeric variable to make a distinction between nuclei, PSDs and ribbons, but a character variable cannot be made numeric. You can ignore this error
