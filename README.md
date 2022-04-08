@@ -16,6 +16,7 @@ Changelog:
 - Updated the euclidian distance section to automatically remove data of unpaired/orphan ribbons or PSDs (setting ribbonsonly = TRUE reverses this).
 - Added counts of unpaired modiolar/pillar ribbons/PSDs.
 
+
   Version 2.0
 - It is no longer needed to manually reformat the Imaris Excel sheets. The script does it automatically.
 - The output of the script is neatly organized and formatted.
