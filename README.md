@@ -4,7 +4,7 @@ Choose the zip with the right Imaris version. The Imaris 9.7.2 scripts will work
 
 To download the scripts, either download the full code containg all four releases in ZIP format from this screen or download the release you need from the 'Releases' tab on the right.
 
-Changelog:
+Changelog.
 Version 2.1
 - Fixed a bug in which no average/median/counts would be outputted if no spots have the ID 'Rib0' or 'PSD0'.
 - Fixed 3D figure renders. Now shows spots in correct size and the pillar/modiolar axis is now transparent.
