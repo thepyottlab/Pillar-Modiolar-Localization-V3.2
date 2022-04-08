@@ -5,7 +5,7 @@ Choose the zip with the right Imaris version. The Imaris 9.7.2 scripts will work
 To download the scripts, either download the full code containg all four releases in ZIP format from this screen or download the release you need from the 'Releases' tab on the right.
 
 Changelog:
-  Version 2.1
+Version 2.1
 - Fixed a bug in which no average/median/counts would be outputted if no spots have the ID 'Rib0' or 'PSD0'.
 - Fixed 3D figure renders. Now shows spots in correct size and the pillar/modiolar axis is now transparent.
 - Fixed 'NAs introduced by coercion' after principal component analysis.
@@ -16,8 +16,7 @@ Changelog:
 - Updated the euclidian distance section to automatically remove data of unpaired/orphan ribbons or PSDs (setting ribbonsonly = TRUE reverses this).
 - Added counts of unpaired modiolar/pillar ribbons/PSDs.
 
-
-  Version 2.0
+Version 2.0
 - It is no longer needed to manually reformat the Imaris Excel sheets. The script does it automatically.
 - The output of the script is neatly organized and formatted.
 - Descriptive statistics, such as means and medians are added.
