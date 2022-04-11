@@ -1,4 +1,4 @@
-# Pillar-Modiolar-Localization-V2.1
+# Pillar-Modiolar-Localization-V2.2
 <p align="center">
   <img width="400" height="400" src="./output.gif">
 </p>
@@ -9,9 +9,24 @@ Choose the zip with the right Imaris version. The Imaris 9.7.2 scripts will work
 
 To download the scripts, either download the full code containg all four releases in ZIP format from this screen or download the release you need from the 'Releases' tab on the right.
 
+# Instructions
+For detailed instructions, see the "Readme.txt" file that is bundled with the scripts.
+1. Export your data from Imaris with the correct names for your spots and surfaces (i.e., "Ribbons","Nucleus","PSD","Pillar","Modiolar".
+2. Convert the Imaris output from XLS to XLSX (a macro is bundled with the scripts to convert a batch of XLS files simultaneously).
+3. Copy the XLSX file into the folder containing the scripts.
+4. Run "Install packages.R" if this is your first time using this script. Run this again whenever you update from an older version of this script.
+5. Open 'Synapse_script.R" and press "Source".
+
+NOTE: if you only exported ribbon volumes, set "Ribbonsonly" to "TRUE" in "Synapse_script.R" before running the script. When running the script with only ribbon data, R will give the following error message: "In min(tmp) : no non-missing arguments to min; returning Inf". This can be ignored.
+
 # Changelog:
 
-
+Version 2.2
+- Added counts per inner hair cell for volume analysis scripts.
+- Reorganized statistics. The output excell files now contain four sheets with different categories of data, since 45 columns on one sheet became too cluttered.
+- Added a setting to make histograms and boxplots of the volumes in the output excel file for the volume analysis scripts.
+- Added a setting to make barplots of the counts in the output excel file for the spot localization script
+- Removed redundant lines of code
 
 Version 2.1
 - Fixed a bug in which no average/median/counts would be outputted if no spots have the ID 'Rib0' or 'PSD0'.
