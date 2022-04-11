@@ -1,4 +1,4 @@
-# Pillar-Modiolar-Localization-V2.2
+# Pillar-Modiolar Localization V2.2
 <p align="center">
   <img width="400" height="400" src="./output.gif">
 </p>
