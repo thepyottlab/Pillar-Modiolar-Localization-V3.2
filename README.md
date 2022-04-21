@@ -1,4 +1,4 @@
-# Pillar-Modiolar Localization V2.2
+# Pillar-Modiolar Localization V2.3
 <p align="center">
   <img width="400" height="400" src="./output.gif">
 </p>
@@ -21,12 +21,16 @@ NOTE: if you only exported ribbon volumes, set "Ribbonsonly" to "TRUE" in "Synap
 
 # Changelog:
 
+Version 2.3
+- Fixed bug in which processing multiple files would give error that the directories are already created.
+- Fixed bug in which no unpaired ribbons/psds would delete the entire dataframe and induce a fatal error.
+
 Version 2.2
 - Added counts per inner hair cell for volume analysis scripts.
 - Reorganized statistics. The output excell files now contain four sheets with different categories of data, since 45 columns on one sheet became too cluttered.
 - Added a setting to make histograms and boxplots of the volumes in the output excel file for the volume analysis scripts.
-- Added a setting to make barplots of the counts in the output excel file for the spot localization script
-- Removed redundant lines of code
+- Added a setting to make barplots of the counts in the output excel file for the spot localization script.
+- Removed redundant lines of code.
 
 Version 2.1
 - Fixed a bug in which no average/median/counts would be outputted if no spots have the ID 'Rib0' or 'PSD0'.
