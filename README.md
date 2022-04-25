@@ -1,4 +1,4 @@
-# Pillar-Modiolar Localization V2.3
+# Pillar-Modiolar Localization V3.0
 <p align="center">
   <img width="400" height="400" src="./output.gif">
 </p>
@@ -11,15 +11,22 @@ To download the scripts, either download the full code containg all four release
 
 # Instructions
 For detailed instructions, see the "Readme.txt" file that is bundled with the scripts.
-1. Export your data from Imaris with the correct names for your spots and surfaces (i.e., "Ribbons","Nucleus","PSD","Pillar","Modiolar".
+1. Export your data from Imaris with the correct names for your spots and surfaces (i.e., "Ribbons","Nucleus","PSD","Pillar","Modiolar"). Or change the names in the label section of "Masterscript.R".
 2. Convert the Imaris output from XLS to XLSX (a macro is bundled with the scripts to convert a batch of XLS files simultaneously).
-3. Copy the XLSX file into the folder containing the scripts.
+3. Copy the XLSX file into the "Input" folder. If no folders are there, make a folder called "Input" or run the masterscript once without copying a file.
 4. Run "Install packages.R" if this is your first time using this script. Run this again whenever you update from an older version of this script.
-5. Open 'Synapse_script.R" and press "Source".
+5. Open 'Masterscript.R", check the settings and press "Source".
 
 NOTE: if you only exported ribbon volumes, set "Ribbonsonly" to "TRUE" in "Synapse_script.R" before running the script. When running the script with only ribbon data, R will give the following error message: "In min(tmp) : no non-missing arguments to min; returning Inf". This can be ignored.
 
 # Changelog:
+
+Version 3.0
+- Updates for older Imaris versions are discontinued.
+- Reorganized the script design. The smaller scripts are now controlled by the "Masterscript".
+- Added looping of the scripts. Multiple files can now be analyzed at once without manual copy/pasting after every run.
+- Added configurable label names. If the names of the objects in Imaris do not match with the script (e.g., "IHC" instead of "Nucleus"), you can configure these custom names in the masterscript.
+- Added automatic mastersheet. The calculated averages, medians and counts will automatically be pasted in the "Mastersheet". Every file analyzed will create a new row and the filename is visible in the first column. A mastersheet will automatically be created when none is detected.
 
 Version 2.3
 - Fixed bug in which processing multiple files would give error that the directories are already created.
