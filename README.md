@@ -1,4 +1,4 @@
-# Pillar-Modiolar Localization V3.0
+# Pillar-Modiolar Localization V3.1
 <p align="center">
   <img width="400" height="400" src="./output.gif">
 </p>
@@ -21,26 +21,31 @@ For detailed instructions, see the "Readme.txt" file that is bundled with the sc
 NOTE: if you only exported ribbon volumes, set "Ribbonsonly" to "TRUE" in "Synapse_script.R" before running the script. When running the script with only ribbon data, R will give the following error message: "In min(tmp) : no non-missing arguments to min; returning Inf". This can be ignored.
 
 # Changelog:
+Version 3.1 - analysis of individual pairs
+- Update only applies to volume analysis scripts
+- Analysis by pairs added. The processed file now contains a sheet that shows which ribbon is paired with which PSD. The ratios of ribbon/PSD volumes are calculated. Pillar and modiolar means and medians of normalized and raw volume ratios are added.
+- Mean/median raw/normalized pillar/modiolar volumes are added to mastersheet.
+- NOTE: this version requires the installation of the 'dplyr' and 'tidyr' packages. Run 'install.packages.R' before running script.
 
-Version 3.0
-- Updates for older Imaris versions are discontinued.
+Version 3.0 - script loop and automatic mastersheet
+- Skipped for volume analysis script for Imaris 7.7.2
 - Reorganized the script design. The smaller scripts are now controlled by the "Masterscript".
 - Added looping of the scripts. Multiple files can now be analyzed at once without manual copy/pasting after every run.
 - Added configurable label names. If the names of the objects in Imaris do not match with the script (e.g., "IHC" instead of "Nucleus"), you can configure these custom names in the masterscript.
 - Added automatic mastersheet. The calculated averages, medians and counts will automatically be pasted in the "Mastersheet". Every file analyzed will create a new row and the filename is visible in the first column. A mastersheet will automatically be created when none is detected.
 
-Version 2.3
+Version 2.3 - bug fixes
 - Fixed bug in which processing multiple files would give error that the directories are already created.
 - Fixed bug in which no unpaired ribbons/psds would delete the entire dataframe and induce a fatal error.
 
-Version 2.2
+Version 2.2 - counts and visualization
 - Added counts per inner hair cell for volume analysis scripts.
 - Reorganized statistics. The output excell files now contain four sheets with different categories of data, since 45 columns on one sheet became too cluttered.
 - Added a setting to make histograms and boxplots of the volumes in the output excel file for the volume analysis scripts.
 - Added a setting to make barplots of the counts in the output excel file for the spot localization script.
 - Removed redundant lines of code.
 
-Version 2.1
+Version 2.1 - bug fixes and removal of unpaired synapses
 - Fixed a bug in which no average/median/counts would be outputted if no spots have the ID 'Rib0' or 'PSD0'.
 - Fixed 3D figure renders. Now shows spots in correct size and the pillar/modiolar axis is now transparent.
 - Fixed 'NAs introduced by coercion' after principal component analysis.
@@ -51,7 +56,7 @@ Version 2.1
 - Updated the euclidian distance section to automatically remove data of unpaired/orphan ribbons or PSDs (setting ribbonsonly = TRUE reverses this).
 - Added counts of unpaired modiolar/pillar ribbons/PSDs.
 
-Version 2.0
+Version 2.0 - redesign
 - It is no longer needed to manually reformat the Imaris Excel sheets. The script does it automatically.
 - The output of the script is neatly organized and formatted.
 - Descriptive statistics, such as means and medians are added.
