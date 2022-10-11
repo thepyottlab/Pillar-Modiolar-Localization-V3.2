@@ -1,4 +1,4 @@
-# Pillar-Modiolar Localization V3.1
+# Pillar-Modiolar Localization V3.2
 <p align="center">
   <img width="400" height="400" src="./output.gif">
 </p>
@@ -21,6 +21,13 @@ For detailed instructions, see the "Readme.txt" file that is bundled with the sc
 NOTE: if you only exported ribbon volumes, set "Ribbonsonly" to "TRUE" in "Synapse_script.R" before running the script. When running the script with only ribbon data, R will give the following error message: "In min(tmp) : no non-missing arguments to min; returning Inf". This can be ignored.
 
 # Changelog:
+Version 3.2 (FINAL) - bug fixes
+- Update only applies to volume analysis scripts.
+- All scripts updated to latest reviewed date.
+- Graphs now properly show only ribbons without deleting unpaired ribbons when selecting Ribbonsonly=TRUE.
+- Graphs now properly reflect whether normalized volumes or raw volumes are used.
+- Fixed bug in which Ribbon:PSD pair statistics would not show up in the masterscript.
+
 Version 3.1 - analysis of individual pairs
 - Update only applies to volume analysis scripts
 - Analysis by pairs added. The processed file now contains a sheet that shows which ribbon is paired with which PSD. The ratios of ribbon/PSD volumes are calculated. Pillar and modiolar means and medians of normalized and raw volume ratios are added.
