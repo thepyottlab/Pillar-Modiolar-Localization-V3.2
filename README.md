@@ -21,7 +21,7 @@ For detailed instructions, see the "Readme.txt" file that is bundled with the sc
 NOTE: if you only exported ribbon volumes, set "Ribbonsonly" to "TRUE" in "Synapse_script.R" before running the script. When running the script with only ribbon data, R will give the following error message: "In min(tmp) : no non-missing arguments to min; returning Inf". This can be ignored.
 
 # Changelog:
-Version 3.2 (FINAL) - bug fixes
+Version 3.2 (Final) - bug fixes
 - Update only applies to volume analysis scripts.
 - All scripts updated to latest reviewed date.
 - Graphs now properly show only ribbons without deleting unpaired ribbons when selecting Ribbonsonly=TRUE.
