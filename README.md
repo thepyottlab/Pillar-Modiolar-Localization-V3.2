@@ -69,3 +69,6 @@ Version 2.0 - redesign
 - Descriptive statistics, such as means and medians are added.
 - All relevant data is bundled into a single output file.
 - Seperate versions for spots or surfaces in the older or newer Imaris versions are added.
+
+Version 1.0
+- Separately maintained at https://github.com/thepyottlab/pillar-modiolar
